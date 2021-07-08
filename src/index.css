@@ -1,0 +1,94 @@
+@import url('https://fonts.google.com/specimen/Rubik?query=Rubik#standard-styles');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: hsl(0, 0%, 98%);
+}
+
+.heading{
+  height: 10%;
+  padding: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage{
+  padding: 3%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto;
+}
+
+.searchbar{
+  grid-column: 1/ span 4;
+  min-height: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 30%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-content {
+  padding: 5%;
+}
+
+.card-content p{
+  margin: 3%;
+  font-size: small;
+}
+
+.country-details{
+  padding: 5%;
+  display: grid;
+  overflow-y: hidden;
+}
+
+.country-page{
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80%;
+}
+
+.detail-box{
+  margin-left: 10%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 50% 50%;
+  font-family: 'Rubik', sans-serif;
+}
+
+.basic-details{
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-1, .detail-2{
+  width: 50%;
+}
+
+.detail-box p{
+  margin-bottom: 2%;
+  font-size: 100%;
+}
