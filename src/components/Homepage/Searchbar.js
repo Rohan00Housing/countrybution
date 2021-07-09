@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const inputStyles = {
-  width: '40%',
   boxShadow: '0 2px 4px 0 rgba(0,0,0,0.1)',
   background: 'var(--theme-page-elements)',
   color: 'var(--theme-page-text)',
@@ -48,6 +47,7 @@ function Searchbar({changeRegion,changeCountry}){
 
     <input className="form-control me-2" 
       type="search" 
+      id="search-country-box"
       placeholder="&#xF002;     Search for a country..." 
       aria-label="Search" 
       style={inputStyles} 
@@ -74,7 +74,7 @@ function Searchbar({changeRegion,changeCountry}){
           <MenuItem value={'Oceania'} onClick= {()=>{changeRegion('Oceania')}}>Oceania</MenuItem>
         </Select>
       </FormControl> */}
-    <div className="nav-item dropdown">
+    <div className="nav-item dropdown" id="region-filter">
                 <a className="nav-link dropdown-toggle btn btn-light" 
                   type="button" 
                   style={buttonStyles}
