@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
 const inputStyles = {
   width: '40%',
   boxShadow: '0 2px 4px 0 rgba(0,0,0,0.1)',
+  background: 'var(--theme-page-elements)',
+  color: 'var(--theme-page-text)',
+  borderColor: 'var(--theme-page-elements)',
   fontFamily: 'FontAwesome',
   fontSize: '18px',
   paddingLeft: '3%'
@@ -25,8 +28,9 @@ const inputStyles = {
 
 const buttonStyles = {
   boxShadow: '0 2px 4px 0 rgba(0,0,0,0.1)',
-  background: 'white',
-  color: 'black'
+  background: 'var(--theme-page-elements)',
+  color: 'var(--theme-page-text)',
+  borderColor: 'var(--theme-page-elements)'
 }
 
 function Searchbar({changeRegion,changeCountry}){
@@ -79,7 +83,7 @@ function Searchbar({changeRegion,changeCountry}){
                   aria-expanded="false">
                   Filter by Region
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={buttonStyles}>
                     <li><a className="dropdown-item" onClick= {()=>{changeRegion('All')}} >All</a></li>
                     <li><a className="dropdown-item" onClick= {()=>{changeRegion('Africa')}} >Africa</a></li>
                     <li><a className="dropdown-item" onClick= {()=>{changeRegion('America')}} >America</a></li>

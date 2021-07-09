@@ -6,9 +6,28 @@
   padding: 0;
 }
 
+.light {
+  --theme-color: #A80000;
+  --theme-page-background: hsl(0, 0%, 98%);
+  --theme-page-text: hsl(200, 15%, 8%);
+  --theme-page-elements: hsl(0, 0%, 100%);
+}
+
+.dark {
+  --theme-color: #0000A8;
+  --theme-page-background: hsl(207, 26%, 17%);
+  --theme-page-text: hsl(0, 0%, 100%);
+  --theme-page-elements: hsl(209, 23%, 22%);
+}
+
+.App {
+  background: var(--theme-page-background);
+  color: var(--theme-page-text);
+}
+
 body {
   font-family: 'Rubik', sans-serif;
-  background: hsl(0, 0%, 98%);
+  /* background: hsl(0, 0%, 98%); */
 }
 
 .heading{
@@ -16,7 +35,7 @@ body {
   padding: 1.5%;
   padding-left: 5%;
   padding-right: 5%;
-  background: hsl(0, 0%, 100%);
+  background: var(--theme-page-elements);
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
@@ -41,7 +60,8 @@ body {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 5px;
+  background: var(--theme-page-elements);
+  /* border-radius: 5px; */
   margin-bottom: 30%;
 }
 
@@ -51,6 +71,10 @@ body {
 
 .card-content {
   padding: 5%;
+  background: var(--theme-page-elements);
+  color: var(--theme-page-text);
+  height: 100%;
+  width: 100%;
 }
 
 .card-content p{
@@ -91,4 +115,8 @@ body {
 .detail-box p{
   margin-bottom: 2%;
   font-size: 100%;
+}
+
+.dropdown-item{
+  color: var(--theme-page-text);
 }
